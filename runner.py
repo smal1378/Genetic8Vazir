@@ -1,26 +1,33 @@
 from time import time
-
+from tqdm import tqdm
 from genetic import Genetic
 from matplotlib import pyplot
 import numpy as np
 repeat = 1  # as my teacher says, a genetic algorithm should be executed for like 30 times
+# Algorithm Parameters
+population = 2000
+max_iter = 800
+min_iter = 400
+pc = 0.80
+lower_pc = 0.001
+pm = 0.5
+lower_pm = 0.009
+max_fittness = 64
+
 
 a = time()
 genetics = []
-for i in range(repeat):
-    x = Genetic(
-        population=2000,
-        max_iter=800,
-        min_iter=400,
-        pc=0.80,
-        lower_pc=0.001,
-        pm=0.5,
-        lower_pm=0.009,
-        max_fittness=64
-    )
-    while not x.termination_condition():
-        x.next_generation()
-    genetics.append(x)
+with tqdm(total=repeat*min_iter if min_iter>50 else repeat*max_iter) as pbar:
+    for i in range(repeat):
+        x = Genetic(
+            population=population, max_iter=max_iter, min_iter=min_iter,
+            pc=pc, lower_pc=lower_pc, pm=pm,
+            lower_pm=lower_pm, max_fittness=max_fittness
+        )
+        while not x.termination_condition():
+            x.next_generation()
+            pbar.update(1)
+        genetics.append(x)
 b = time()
 
 

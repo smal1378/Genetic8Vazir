@@ -121,6 +121,7 @@ My teacher said to me that a genetic algorithm should run like `30` times to mak
 With default parameters at 99% of times you'll get the answer with only one run.
 - Algorithm parameters are being set in first few lines of `runner.py`. 
 Try running algorithm with many combination of parameters and see the result.
+- After running the `runner.py` there will be some progressbar showing how many generation has been proceeded. 
 - After algorithm has finished, Three plots will appear on your screen, First (starting from top left) is 
 the chessboard, Black squares are queens. Second plot is best fittness found in a population by generation. 
 Third is fittness average by generation, This plot might go up and down in lower generations but will stay stable
