@@ -129,9 +129,12 @@ at remaining generations (Assume it 30 by 70) (And ofcourse with default paramet
 algorithm is not working good.)
 
 
-### Some Experiences That I Achieved
+### Some Experiences That I Achieved:
 
 --- I'll write it later ---
 
+### Thanks To:
+- Thanks to Dr Golzari for teaching me how does a binary genetic algorithm work.
+- Thanks to Mr Vakili for `tqdm` progressbar and suggesting `2000` for population size.
 <br><br><br>
 Good luck.
