@@ -119,7 +119,7 @@ Some details:
 - Find `repeat` variable, It's default is `1` means the algorithm will run only one time, 
 My teacher said to me that a genetic algorithm should run like `30` times to make sure you find the best answer, 
 With default parameters at 99% of times you'll get the answer with only one run.
-- Find where `Genetic` class is being instantiated, algorithm parameters will be set there. 
+- Algorithm parameters are being set in first few lines of `runner.py`. 
 Try running algorithm with many combination of parameters and see the result.
 - After algorithm has finished, Three plots will appear on your screen, First (starting from top left) is 
 the chessboard, Black squares are queens. Second plot is best fittness found in a population by generation. 
