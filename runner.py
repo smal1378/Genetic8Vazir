@@ -56,7 +56,7 @@ ax1.set_title(f"Best Found: (fittness: {best_fittness}/64)")
 # Major ticks
 ax1.set_xticks(np.arange(0, 8, 1))
 ax1.set_yticks(np.arange(0, 8, 1))
-ax1.label_outer()
+
 
 # Labels for major ticks
 ax1.set_xticklabels(np.arange(1, 9, 1))
@@ -71,14 +71,14 @@ ax1.set_yticks(np.arange(-.5, 8, 1), minor=True)
 ax1.grid(which='minor', color='black', linestyle='-', linewidth=1)
 # pyplot.plot()
 
-ax2.plot(range(genetics[0].generation), genetics[0].avg_fittness)
+ax2.plot(range(best_genetic.generation), best_genetic.avg_fittness)
 ax2.set_title("Population Average Fittness By Generation")
 ax2.set_xlabel("Generation")
 ax2.set_ylabel("Avg")
-ax2.label_outer()
 
-ax3.plot(range(genetics[0].generation), genetics[0].best_fittness)
+
+ax3.plot(range(best_genetic.generation), best_genetic.best_fittness)
+ax3.set_title("Best Chromosome Fittness By Generation")
 ax3.set_xlabel("Generation")
 ax3.set_ylabel("Best")
-ax3.set_title("Best Chromosome Fittness By Generation")
-ax3.label_outer()
+
