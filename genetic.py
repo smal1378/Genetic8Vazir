@@ -203,8 +203,8 @@ class Genetic:
         while a + 1 < len(parents):
             random = randint(0, 1000)
             if random >= self.pc * 1000:
-                childes.append(parents[a])
-                childes.append(parents[a+1])
+                childes.append(Chromosome(parents[a].arr))  # necessary to create new object.
+                childes.append(Chromosome(parents[a+1].arr))
             else:
                 childes.extend(parents[a].new(parents[a+1]))  # add two new children to childes
             a += 2
