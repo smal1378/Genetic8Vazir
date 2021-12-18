@@ -9,7 +9,7 @@ a = time()
 genetics = []
 for i in range(repeat):
     x = Genetic(
-        population=1000,
+        population=2000,
         max_iter=800,
         min_iter=400,
         pc=0.80,

@@ -37,7 +37,7 @@ If you want to ask why, Just because I'm saying it... (I'm pretty sure that tota
 There are some parameters that you can change in algorithm, I'll explain theme one by one: <br>
 Note: Most numbers are guessed by me and tried so many times to find them out.
 - population: Total chromosomes that are in each generation. 
-1000 is good, don't get lower than 500 because it won't work. 
+1000 is good and 2000 is perfect, Getting lower than 500 causes unstable average fittness. 
 With some tests I found that the more this number is the more stable population we got.
 - max_iter: Maximum iteration (or generations) within each run of algorithm. 800 for default, but 200 usually works.
 - min_iter: Minimum iteration even that a chromosome with fittness value of 64 found.
