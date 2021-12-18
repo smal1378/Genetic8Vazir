@@ -173,7 +173,7 @@ class Genetic:
             self.ans = maxi
 
     def termination_condition(self) -> bool:
-        if self.min_iter <= self.generation and self.max_fittness <= self.best_fittness[-1]:
+        if self.min_iter <= self.generation and self.max_fittness <= self.ans.fittness():
             return True
         return self.generation >= self.max_iter
 
