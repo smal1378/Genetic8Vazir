@@ -5,7 +5,7 @@ from matplotlib import pyplot
 import numpy as np
 repeat = 1  # as my teacher says, a genetic algorithm should be executed for like 30 times
 # Algorithm Parameters
-population = 50
+population = 2000
 max_iter = 800
 min_iter = 400
 pc = 0.80
